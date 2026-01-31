@@ -12,8 +12,8 @@ Those looking for delicious recipes that they can make at home
 
 ## Project Requirements
 ### Detailed Form/Local Storage
-Input/retrieve user recipes
-Other "form" for search search function
+Input/retrieve user recipes  
+Other "form" for search function
 ### Data/API/json
 JSON file that holds all "default" recipes/recipe information
 ### Drop-Down Menu
