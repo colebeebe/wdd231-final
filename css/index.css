@@ -1,0 +1,10 @@
+/* Temporary styling for palette */
+.palette {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+}
+
+.palette > div {
+    width: 200px;
+}
