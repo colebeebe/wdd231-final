@@ -71,3 +71,15 @@ a {
 .btn-dark-red:hover {
     background-color: var(--dark-red_hover);
 }
+
+/* Medium (tablet) screens */
+@media screen and (max-width: 1000px) {
+
+}
+
+/* Small (phone) screens */
+@media screen and (max-width: 700px) {
+    main {
+        margin-left: 0;
+    }
+}
