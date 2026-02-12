@@ -1,8 +1,13 @@
+@import './partials/variables.css';
+@import './partials/default.css';
+@import './partials/header.css';
+
 /* Temporary styling for palette */
 .palette {
     display: flex;
     width: 1000px;
     height: 400px;
+    margin: 0 auto;
 }
 
 .palette > div {
