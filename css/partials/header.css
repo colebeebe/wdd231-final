@@ -1,0 +1,23 @@
+header {
+    background-color: var(--light);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    padding: 25px;
+}
+
+#logo {
+    aspect-ratio: 1 / 1;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+}
