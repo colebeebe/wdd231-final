@@ -1,0 +1,49 @@
+@import './partials/variables.css';
+@import './partials/default.css';
+@import './partials/header.css';
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.preview {
+    background-color: var(--light_hover);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.preview img {
+    border-radius: 14px;
+}
+
+.info {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.favorite, .view {
+    font-size: 0.8rem;
+    padding: 3px 15px;
+}
+
+/* Medium (tablet) screens */
+@media screen and (max-width: 1000px) {
+
+}
+
+/* Small (phone) screens */
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 1.1rem;
+    }
+}
