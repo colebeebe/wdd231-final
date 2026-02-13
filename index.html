@@ -6,18 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="[Website Description]" />
         <meta name="author" content="Cole Beebe-Urbanawiz and Stephen Collins" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <title>Any Recipe Goes | Home</title>
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
+        <header>
+            <a href="./" id="logo">
+                <img src="https://picsum.photos/200/200" alt="random photo for now" />
+            </a>
+            <nav>
+                <a href="./" class="btn">Home</a>
+                <a href="browse.html" class="btn">Browse</a>
+                <a href="#" class="btn">Account</a>
+            </nav>
+        </header>
         <main>
+            <!-- I've created some basic button classes. 'btn' contains all of the base styling, and 'btn-[color]' will color it -->
+            <!-- according to the chosen color (color choices are green, orange, red, and dark-red). All five button options (for reference): -->
+            <div style="display: flex; flex-direction: column; width: 200px; margin: 20px auto; gap: 10px;">
+                <button class="btn">Basic Button</button>
+                <button class="btn btn-green">Green Button</button>
+                <button class="btn btn-orange">Orange Button</button>
+                <button class="btn btn-red">Red Button</button>
+                <button class="btn btn-dark-red">Dark Red Button</button>
+            </div>
+            <!-- Feel free to remove this; it's only to show how to use the button classes that I've created. Also, as you can see in the -->
+            <!-- header, the same classes can be used on links for visual coherency, the difference being that buttons perform logic using JavaScript -->
+            <!-- and links navigate to a seperate page of HTML. As always, let me know if you have any questions. -->
+
             <!-- Temporary palette element for reference -->
             <div class="palette">
-                <div style="background-color: #8C7C2B">#8C7C2B</div>
-                <div style="background-color: #D9C5A0">#D9C5A0</div>
-                <div style="background-color: #F2780C">#F2780C</div>
-                <div style="background-color: #D92D07">#D92D07</div>
-                <div style="background-color: #8C0707">#8C0707</div>
+                <div style="background-color: #8C7C2B"></div>
+                <div style="background-color: #D9C5A0"></div>
+                <div style="background-color: #F2780C"></div>
+                <div style="background-color: #D92D07"></div>
+                <div style="background-color: #8C0707"></div>
             </div>
             <!-- End of palette element -->
         </main>

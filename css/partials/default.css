@@ -1,0 +1,85 @@
+:root {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    font-family: 'PT Serif', 'Times New Roman', Times, serif;
+}
+
+main {
+    margin-left: 250px;
+}
+
+::selection {
+    background-color: var(--orange);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 1rem;
+    background-color: var(--light);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 30px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--light_hover);
+}
+
+.btn-green {
+    background-color: var(--green);
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: var(--green_hover);
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: var(--orange_hover);
+}
+
+.btn-red {
+    background-color: var(--red);
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: var(--red_hover);
+}
+
+.btn-dark-red {
+    background-color: var(--dark-red);
+    color: white
+}
+
+.btn-dark-red:hover {
+    background-color: var(--dark-red_hover);
+}
+
+/* Medium (tablet) screens */
+@media screen and (max-width: 1000px) {
+
+}
+
+/* Small (phone) screens */
+@media screen and (max-width: 700px) {
+    main {
+        margin-left: 0;
+    }
+}
