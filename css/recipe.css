@@ -1,0 +1,103 @@
+@import './partials/variables.css';
+@import './partials/default.css';
+
+body {
+    background-color: var(--light_hover);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    background-color: white;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    margin: 40px;
+}
+
+header a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.title-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    border: 1px solid var(--dark-red);
+    margin: 10px 0;
+}
+
+img {
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.prep-info {
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.prep-info > p {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.prep-info > p:first-of-type {
+    border-right: 1px solid lightgray;
+}
+
+.prep-info > p:last-of-type {
+    border-left: 1px solid lightgray;
+}
+
+.ingredients {
+    padding: 40px;
+}
+
+/* Medium (tablet) screens */
+@media screen and (max-width: 1000px) {
+    main {
+        width: auto;
+        max-width: auto;
+        margin: 0;
+    }
+
+    .title-info {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/* Small (phone) screens */
+@media screen and (max-width: 700px) {
+    .title-info > h1 {
+        font-size: 1.8rem;
+    }
+
+    .title-info > h2 {
+        font-size: 1.2rem;
+    }
+}
