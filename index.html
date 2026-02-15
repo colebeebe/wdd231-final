@@ -23,29 +23,38 @@
                 <a href="#" class="btn">Account</a>
             </nav>
         </header>
-        <main>
-            <!-- I've created some basic button classes. 'btn' contains all of the base styling, and 'btn-[color]' will color it -->
-            <!-- according to the chosen color (color choices are green, orange, red, and dark-red). All five button options (for reference): -->
-            <div style="display: flex; flex-direction: column; width: 200px; margin: 20px auto; gap: 10px;">
-                <button class="btn">Basic Button</button>
-                <button class="btn btn-green">Green Button</button>
-                <button class="btn btn-orange">Orange Button</button>
-                <button class="btn btn-red">Red Button</button>
-                <button class="btn btn-dark-red">Dark Red Button</button>
-            </div>
-            <!-- Feel free to remove this; it's only to show how to use the button classes that I've created. Also, as you can see in the -->
-            <!-- header, the same classes can be used on links for visual coherency, the difference being that buttons perform logic using JavaScript -->
-            <!-- and links navigate to a seperate page of HTML. As always, let me know if you have any questions. -->
+        <main>          
+            <section class="hero">
+                <img src="images/hero.png" alt="hero image" />
+            </section>
+            <section class="intro">
+                <h1>Any Recipe Goes</h1>
+                <p>Any Recipe Goes showcases some of the tastiest recipes you’ll whip up in your kitchen. Enjoy cooking with
+                    friends and family with our unique and authentic recipes. From decadent deserts to savory meals we have
+                    it all. Make and customize your own list of recipes and add family favorites. Explore new things and
+                    broaden your pallet.</p>
+            </section>
+            <section class="featured">
+            <div class="image-container">  
+                <div class="image-card">
+                <img src="https://picsum.photos/800/400" alt="Recipe 1">
+                </div>
 
-            <!-- Temporary palette element for reference -->
-            <div class="palette">
-                <div style="background-color: #8C7C2B"></div>
-                <div style="background-color: #D9C5A0"></div>
-                <div style="background-color: #F2780C"></div>
-                <div style="background-color: #D92D07"></div>
-                <div style="background-color: #8C0707"></div>
+                <div class="image-card">
+                <img src="https://picsum.photos/800/400" alt="Recipe 2">
+                </div>
             </div>
-            <!-- End of palette element -->
+            </section>
+            <div class="signup">
+                <form>
+                    <h2>Join Our Newsletter</h2>
+                    <p>Sign up to get updates about our latest offers.</p>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
         </main>
     </body>
 </html>
