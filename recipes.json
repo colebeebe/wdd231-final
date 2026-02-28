@@ -1,0 +1,236 @@
+[
+    {
+        "recipe_name": "Chocolate Chip Cookies",
+        "author": "The Pioneer Woman",
+        "image": "chocolate-chip-cookies.webp",
+        "yields": "16",
+        "prep_time": "25 min",
+        "total_time": "1 hr 20 min",
+        "subrecipes": [
+            {
+                "ingredients": [
+                    {
+                        "name": "butter",
+                        "amount": "2",
+                        "unit": "sticks",
+                        "notes": "at room temperature"
+                    },
+                    {
+                        "name": "granulated sugar",
+                        "amount": "2/3",
+                        "unit": "cup"
+                    },
+                    {
+                        "name": "packed light brown sugar",
+                        "amount": "2/3",
+                        "unit": "cup"
+                    },
+                    {
+                        "name": "vanilla extract",
+                        "amount": "1",
+                        "unit": "Tbsp."
+                    },
+                    {
+                        "name": "large eggs",
+                        "amount": "2"
+                    },
+                    {
+                        "name": "all-purpose flour",
+                        "amount": "2 1/4",
+                        "unit": "cups"
+                    },
+                    {
+                        "name": "baking soda",
+                        "amount": "1",
+                        "unit": "tsp."
+                    },
+                    {
+                        "name": "kosher salt",
+                        "amount": "1/2",
+                        "unit": "tsp."
+                    },
+                    {
+                        "name": "semisweet chocolate",
+                        "amount": "8",
+                        "unit": "oz.",
+                        "notes": "chopped into chunks"
+                    },
+                    {
+                        "name": "dark chocolate",
+                        "amount": "4",
+                        "unit": "oz.",
+                        "notes": "chopped into chunks"
+                    },
+                    {
+                        "name": "Sea salt",
+                        "notes": "for sprinkling"
+                    }
+                ],
+                "steps": [
+                    "Line 3 baking sheets with parchment paper.",
+                    "In a stand mixer fitted with the paddle attachment, cream together the butter, granulated sugar, and brown sugar on medium-high speed until light and fluffy, 2 to 3 minutes, scraping the sides of the bowl as needed. Add the vanilla and eggs and beat on medium speed until just combined. Add the flour, baking soda, and salt and mix on low speed until just combined. Remove the bowl from the mixer and stir in the semisweet and dark chocolate using a wooden spoon or rubber spatula.",
+                    "Use a 1/4-cup scoop to scoop the dough, making sure to scrape the scoop against the side of the bowl to flatten the top. Scoop onto the prepared baking sheets about 2 inches apart to give them space to spread while baking. Sprinkle a pinch or two of sea salt on top of each cookie dough mound. Refrigerate, uncovered, for at least 20 minutes.",
+                    "Preheat the oven to 350°F.",
+                    "Bake until golden brown, 17 to 18 minutes. Let the cookies cool and crisp up on the baking sheets."
+                ]
+            }
+        ]
+    },
+    {
+        "recipe_name": "Classic New York Cheesecake",
+        "author": "Jennifer Segal",
+        "image": "classic-cheesecake.webp",
+        "servings": "8 to 10",
+        "prep_time": "30 min",
+        "cook_time": "1 hr 55 min",
+        "total_time": "2 hr 25 min, plus at least 8 hours to cool",
+        "subrecipes": [
+            {
+                "name": "crust",
+                "ingredients": [
+                    {
+                        "name": "graham cracker crumbs",
+                        "amount": "1 1/2",
+                        "unit": "cups",
+                        "notes": "from 12 whole crackers"
+                    },
+                    {
+                        "name": "unsalted butter",
+                        "amount": "5",
+                        "unit": "Tbsp.",
+                        "notes": "melted"
+                    },
+                    {
+                        "name": "sugar",
+                        "amount": "2",
+                        "unit": "Tbsp."
+                    },
+                    {
+                        "name": "salt",
+                        "amount": "1/8",
+                        "unit": "tsp."
+                    }
+                ],
+                "steps": [
+                    "In a medium bowl, combine the graham cracker crumbs, melted butter, sugar, and salt. Stir until well combined.",
+                    "Press the crumbs into an even layer on the the bottom of the prepared pan. Bake the crust for 10 minutes, until set. Remove the pan from the oven and set aside."
+                ]
+            },
+            {
+                "name": "filling",
+                "ingredients": [
+                    {
+                        "name": "cream cheese",
+                        "amount": "32",
+                        "unit": "oz. (four 8-oz. blocks)",
+                        "notes": "at room temperature"
+                    },
+                    {
+                        "name": "sugar",
+                        "amount": "2",
+                        "unit": "cups"
+                    },
+                    {
+                        "name": "all-purpose flour",
+                        "amount": "3",
+                        "unit": "Tbsp."
+                    },
+                    {
+                        "name": "vanilla extract",
+                        "amount": "4",
+                        "unit": "tsp."
+                    },
+                    {
+                        "name": "lemon zest",
+                        "amount": "1",
+                        "unit": "tsp. packed",
+                        "notes": "from 1 lemon"
+                    },
+                    {
+                        "name": "fresh lemon juice",
+                        "amount": "2",
+                        "unit": "tsp.",
+                        "notes": "from 1 lemon"
+                    },
+                    {
+                        "name": "salt",
+                        "amount": "1/4",
+                        "unit": "tsp."
+                    },
+                    {
+                        "name": "large eggs",
+                        "amount": "6"
+                    },
+                    {
+                        "name": "sour cream",
+                        "amount": "1/2",
+                        "unit": "cup"
+                    },
+                    {
+                        "name": "Berry sauce",
+                        "notes": "for serving (optional)"
+                    }
+                ],
+                "steps": [
+                    "Preheat the oven to 375°F (190°C) and set an oven rack in the lower middle position. Wrap a 9 or 10-in (23 or 25-cm) springform pan with one large piece of heavy-duty aluminum foil, covering the underside and extending all the way to the top so there are no seams on the bottom or sides of the pan. Repeat with another sheet of foil for insurance. Spray the inside of the pan with nonstick cooking spray.",
+                    "In the bowl of an electric mixer fitted with the paddle attachment or beaters, beat the cream cheese, sugar, and flour together on medium speed until just smooth, about 1 minute. Scrape the bottom and sides of the bowl to be sure the mixture is evenly combined. Add the vanilla, lemon zest, lemon juice, and salt; beat on low speed until just combined. Add the eggs, one at a time, mixing on low speed until incorporated, scraping the bowl as necessary. Mix in the sour cream. Make sure the batter is uniform but do not over-mix.",
+                    "Check to make sure your oven has cooled to 325°F (165°C), then set the cheesecake pan in a large roasting pan. Pour the batter on top of the crust. Pour the boiling water into the large roasting pan to come about 1 inch up the side of the cake pan. Bake until the cake is just set, 1 hour and 30 minutes to 1 hour and 45 minutes. (If the cheesecake starts to look too golden on top towards the end, cover it loosely with foil.) The cake should not look liquidy at all, but will wobble just a bit when the pan is nudged; it will continue to cook as it cools. Carefully remove the roasting pan from the oven and set it on a wire rack. Cool the cheesecake in the water bath until the water is just warm, about 45 minutes. Remove the springform pan from the water bath and discard the foil. If necessary, run a thin-bladed knife around the edge of the cake to make sure it's not sticking to the sides (which can cause cracks as it cools), then cover with plastic wrap and transfer to the refrigerator to cool for at least 8 hours or overnight.",
+                    "For serving: Remove the sides of the springform pan. Serve the cheesecake right from the base of the pan; or, to transfer it to a serving platter, run a long, thin spatula between the crust and the pan bottom, and then use two large spatulas to carefully transfer the cheesecake to a serving dish. Slice with a sharp knife, wiping the knife clean between slices. Serve with <a href=\"https://www.onceuponachef.com/recipes/berry-sauce.html\">berry sauce</a>, if you like."
+                ]
+            }
+        ]
+    },
+    {
+        "recipe_name": "Berry Sauce",
+        "author": "Jennifer Segal",
+        "image": "berry-sauce.webp",
+        "servings": "8 to 10",
+        "prep_time": "10 min",
+        "cook_time": "10 min",
+        "total_time": "20 min, plus time to cool",
+        "subrecipes": [
+            {
+                "ingredients": [
+                    {
+                        "name": "fresh strawberries",
+                        "amount": "1",
+                        "unit": "lb.",
+                        "notes": "hulled and thinly sliced"
+                    },
+                    {
+                        "name": "fresh raspberries",
+                        "amount": "6",
+                        "unit": "oz. (1 dry half pint)"
+                    },
+                    {
+                        "name": "fresh blueberries",
+                        "amount": "6",
+                        "unit": "oz. (1 dry half pint)"
+                    },
+                    {
+                        "name": "fresh blackberries",
+                        "amount": "6",
+                        "unit": "oz. (1 dry half pint)"
+                    },
+                    {
+                        "name": "fresh lemon juice",
+                        "amount": "1",
+                        "unit": "Tbsp.",
+                        "notes": "from 1 lemon"
+                    },
+                    {
+                        "name": "sugar",
+                        "amount": "3/4",
+                        "unit": "cup"
+                    }
+                ],
+                "steps": [
+                    "Combine all of the berries in a large bowl and stir gently to combine. Spoon about ⅔ of the mixed berries into a medium saucepan; transfer the remaining berries to a small bowl and refrigerate until ready to serve.",
+                    "Add the lemon juice and sugar to the berries in the sauce pan. Bring to a gentle boil over medium heat and cook until the fruit is syrupy, about 5 minutes.",
+                    "Transfer the hot berry mixture to a blender and purée until smooth. Set a fine mesh strainer over a bowl. Pour the sauce into the strainer and use the back of a soup ladle and circular motions to force the sauce through the strainer and into the bowl. Discard the seeds that remain in the strainer. Refrigerate the berry sauce until cold or ready to serve.",
+                    "Before serving, add the reserved berries to the sauce and stir to combine. If the sauce seems too thick, add a few tablespoons of water, a little at a time, until the desired consistency is reached."
+                ]
+            }
+        ]
+    }
+]
