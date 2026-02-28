@@ -12,8 +12,14 @@ async function init() {
     const data = await getJson('./recipes.json');
     // Get the <main> element
     const main = document.querySelector('main');
+    // Get the parameters that are passed via url
+    const params = new URLSearchParams(window.location.search);
+    // Redirect if there is no recipe specified
+    if (!params.has('id')) {
+        window.location.href = './';
+    }
     // Build the HTML for the page
-    const html = recipePageTemplate(data[1]);
+    const html = recipePageTemplate(data[params.get('id')]);
     // Insert the HTML. This is non-destructive, so anything that already
     // exists won't get overwritten
     main.insertAdjacentHTML('beforeend', html);

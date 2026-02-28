@@ -21,7 +21,7 @@ function addCards(data) {
     // this case, we are creating one string that represents the html for all
     // of the cards, so we use map() to return that. Normally, you might be 
     // accustomed to seeing something like `data.map(object => object.name)`
-    // but because recipeCardTemplate() only expects one parameter, JavaScript
+    // but because recipeCardTemplate() expects two parameters, JavaScript
     // is able to infer that we want to pass each object in `data` into the
     // recipeCardTemplate() function call. After all of that, we need to use
     // `join('')`, which just tells map() to join all elements with nothing

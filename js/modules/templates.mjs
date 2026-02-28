@@ -2,9 +2,10 @@
 
 // The function to create recipe cards on browse.html
 // 'data' represents a single recipe, not the whole array that we pulled from
-// the json file. We return a single card element that can, in turn, be
+// the json file. 'id' is the id of the reicpe, which is the same as its index
+// in the array. We return a single card element that can, in turn, be
 // inserted into the html
-export function recipeCardTemplate(data) {
+export function recipeCardTemplate(data, id) {
     // Get the recipe's image. It must be found inside images/recipes/
     // We also check to make sure that the data exists.
     let image = 'https://picsum.photos/100/100';
@@ -27,7 +28,7 @@ export function recipeCardTemplate(data) {
             </section>
             <div class="btn-container">
                 <button class="btn btn-orange favorite">Favorite</button>
-                <a href="recipe.html" class="btn btn-green view">View</a>
+                <a href="recipe.html?id=${id}" class="btn btn-green view">View</a>
             </div>
         </div>
     `;
