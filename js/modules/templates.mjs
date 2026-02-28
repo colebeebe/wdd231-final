@@ -33,6 +33,7 @@ export function recipeCardTemplate(data) {
     `;
 }
 
+// The template for the ingredients section of recipe.html
 function ingredientsTemplate(data) {
     return data.map(recipe => `
         ${recipe.name ? `<h2 class="recipe-name">${recipe.name}</h2>` : ``}
@@ -48,6 +49,7 @@ function ingredientsTemplate(data) {
     `).join('');
 }
 
+// The template for recipe steps section of recipe.html
 function stepsTemplate(data) {
     return data.map(recipe => `
         ${recipe.name ? `<h2 class="recipe-name">${recipe.name}</h2>` : ``}
