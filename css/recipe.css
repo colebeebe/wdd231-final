@@ -13,6 +13,7 @@ main {
     padding: 80px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
 }
 
 header {
@@ -25,7 +26,11 @@ header a {
     font-weight: 700;
 }
 
-header a:hover {
+a {
+    color: var(--dark-red);
+}
+
+a:hover {
     text-decoration: underline;
 }
 
@@ -40,9 +45,12 @@ hr {
 }
 
 img {
-    margin: 30px 0;
+    display: block;
+    margin: 30px auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    max-height: 600px;
 }
 
 .prep-info {
@@ -70,8 +78,21 @@ img {
     border-left: 1px solid lightgray;
 }
 
+.recipe-name {
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.recipe-name:first-of-type {
+    margin-top: 0;
+}
+
 .ingredients {
     padding: 40px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 /* Medium (tablet) screens */
