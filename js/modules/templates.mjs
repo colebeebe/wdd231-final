@@ -27,7 +27,7 @@ export function recipeCardTemplate(data, id) {
                 <h2>${data.recipe_name}</h2>
             </section>
             <div class="btn-container">
-                <button class="btn btn-orange favorite">Favorite</button>
+                <button class="btn btn-orange favorite" data-id="${id}">Favorite</button>
                 <a href="recipe.html?id=${id}" class="btn btn-green view">View</a>
             </div>
         </div>
@@ -81,7 +81,7 @@ export function recipePageTemplate(data) {
     return `
         <section class="title-info">
             <h1>${data.recipe_name}</h1>
-            <h2>Author: ${data.author}</h2>
+            ${data.author ? `<h2>Author: ${data.author}</h2>` : ``}
         </section>
         <hr />
         <img src="${image}" alt="${alt}" />
