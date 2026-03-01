@@ -1,0 +1,31 @@
+.preview {
+    background-color: var(--light_hover);
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.preview img {
+    border-radius: 14px;
+    max-height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.favorite, .view {
+    font-size: 0.8rem;
+    padding: 3px;
+    width: 100px;
+}

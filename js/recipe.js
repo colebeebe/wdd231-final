@@ -15,11 +15,17 @@ async function init() {
     // Get the parameters that are passed via url
     const params = new URLSearchParams(window.location.search);
     // Redirect if there is no recipe specified
-    if (!params.has('id')) {
+    let html = ``;
+    if (params.has('id')) {
+        html = recipePageTemplate(data[params.get('id')]);
+    }
+    else if (params.has('name')) {
+        html = recipePageTemplate(data.find(r => r.recipe_name.toLowerCase() === params.get('name').toLowerCase()));
+    }
+    else {
         window.location.href = './';
     }
     // Build the HTML for the page
-    const html = recipePageTemplate(data[params.get('id')]);
     // Insert the HTML. This is non-destructive, so anything that already
     // exists won't get overwritten
     main.insertAdjacentHTML('beforeend', html);
