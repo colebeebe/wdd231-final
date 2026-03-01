@@ -81,7 +81,7 @@ export function recipePageTemplate(data) {
     return `
         <section class="title-info">
             <h1>${data.recipe_name}</h1>
-            <h2>Author: ${data.author}</h2>
+            ${data.author ? `<h2>Author: ${data.author}</h2>` : ``}
         </section>
         <hr />
         <img src="${image}" alt="${alt}" />
