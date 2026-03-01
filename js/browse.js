@@ -4,6 +4,8 @@ import { getJson } from "./modules/utilities.mjs";
 import { recipeCardTemplate } from "./modules/templates.mjs";
 // Remember that we import we have to specify module in the <script> element
 
+let favorites = JSON.parse(localStorage.getItem('favorites'));
+
 // Even though this is getting called by an async function, it does not need
 // to be asynchronous itself. This is because we never have to await anything
 // on the inside; by the time the data has reached this point we have it
@@ -31,6 +33,26 @@ function addCards(data) {
     // this case we use insertAdjacentHTML(), which is non-destructive (it
     // doesn't destroy everything that already exists inside the element)
     content.insertAdjacentHTML('beforeend', html);
+
+    content.addEventListener('click', function(e) {
+        if (e.target.classList.contains('favorite')) {
+            const id = e.target.dataset.id;
+            const recipe = {
+                name: data[id].recipe_name,
+                author: data[id].author
+            };
+            if (!favorites) {
+                favorites = [];
+            }
+            favorites.push(recipe);
+            updateFavorites();
+        }
+    });
+}
+
+function updateFavorites() {
+    if (!favorites) return;
+    localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
 // JavaScript doesn't really like to work with awaits outside of a function,
@@ -40,6 +62,7 @@ async function init() {
     // Don't forget: getJson() is an async function so we need to await it
     const data = await getJson('./recipes.json');
     addCards(data);
+    
 }
 
 // This is the actual call to our initialization function. Without this, it
