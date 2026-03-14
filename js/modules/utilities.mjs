@@ -28,6 +28,8 @@ export async function getJson(url) {
 // Here, 'data' represents the JSON object that we pulled from file, with all
 // recipes (rather than just a single recipe)
 export function addCards(data) {
+    let favorites = JSON.parse(localStorage.getItem('favorites'));
+    if (!favorites) favorites = [];
     // We get this element because that's where we've designated that the
     // cards will be added
     const content = document.querySelector(".content");
@@ -66,14 +68,15 @@ export function addCards(data) {
             }
 
             const marker = e.target.closest('.preview').querySelector('.favorite-marker');
+            console.log(e.target.closest('.preview'));
             if (marker) marker.classList.toggle('hidden');
 
-            updateFavorites();
+            updateFavorites(favorites);
         }
     });
 }
 
-function updateFavorites() {
+function updateFavorites(favorites) {
     if (!favorites) return;
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
