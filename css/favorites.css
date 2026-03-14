@@ -3,6 +3,12 @@
 @import './partials/header.css';
 @import './partials/recipeCard.css';
 
+h1 {
+    margin: 20px auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
