@@ -4,15 +4,25 @@ const closeBtn = document.querySelector(".close-button");
 const form = document.querySelector("#newsletter-form");
 const errorMessage = document.querySelector("#form-error");
 
+
 function openModal() {
   modal.classList.add("open");
+  modal.classList.remove("close-animation"); 
   modal.setAttribute("aria-hidden", "false");
 }
 
+
 function closeModal() {
-  modal.classList.remove("open");
+  modal.classList.add("close-animation");
+  modal.addEventListener("animationend", handleClose, { once: true });
+}
+
+
+function handleClose() {
+  modal.classList.remove("open", "close-animation");
   modal.setAttribute("aria-hidden", "true");
 }
+
 
 openBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
@@ -29,6 +39,7 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -42,4 +53,8 @@ form.addEventListener("submit", function (event) {
 
   errorMessage.textContent = "";
 
+  const user = { name, email };
+  localStorage.setItem("newsletterUser", JSON.stringify(user));
+
+  closeModal(); 
 });

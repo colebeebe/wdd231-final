@@ -4,8 +4,6 @@ import { getJson } from "./modules/utilities.mjs";
 import { recipeCardTemplate } from "./modules/templates.mjs";
 // Remember that we import we have to specify module in the <script> element
 
-let favorites = JSON.parse(localStorage.getItem('favorites'));
-
 // Even though this is getting called by an async function, it does not need
 // to be asynchronous itself. This is because we never have to await anything
 // on the inside; by the time the data has reached this point we have it
@@ -71,7 +69,6 @@ async function init() {
         }
     });
     addCards(data);
-    
 }
 
 // This is the actual call to our initialization function. Without this, it
