@@ -25,9 +25,10 @@ export function recipeCardTemplate(data, id) {
             <section class="info">
                 <img src="${image}" alt="${alt}" />
                 <h2>${data.recipe_name}</h2>
+                <p class="favorite-marker ${data.favorite ? `` : `hidden`}">❤︎</p>
             </section>
             <div class="btn-container">
-                <button class="btn btn-orange favorite" data-id="${id}">Favorite</button>
+                <button class="btn btn-orange favorite" data-id="${id}">${data.favorite ? `Unfavorite`: `Favorite`}</button>
                 <a href="recipe.html?id=${id}" class="btn btn-green view">View</a>
             </div>
         </div>

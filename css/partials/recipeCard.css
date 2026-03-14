@@ -29,3 +29,11 @@
     padding: 3px;
     width: 100px;
 }
+
+.favorite-marker {
+    color: var(--red);
+}
+
+.hidden {
+    display: none;
+}

@@ -37,13 +37,16 @@ function addCards(data) {
     content.addEventListener('click', function(e) {
         if (e.target.classList.contains('favorite')) {
             const id = e.target.dataset.id;
+            if (!favorites) {
+                favorites = [];
+            }
+            else {
+                console.log(favorites);
+            }
             const recipe = {
                 name: data[id].recipe_name,
                 author: data[id].author
             };
-            if (!favorites) {
-                favorites = [];
-            }
             favorites.push(recipe);
             updateFavorites();
         }
@@ -61,6 +64,12 @@ function updateFavorites() {
 async function init() {
     // Don't forget: getJson() is an async function so we need to await it
     const data = await getJson('./recipes.json');
+    data.forEach(r => {
+        r.favorite = false;
+        if (favorites.find(f => f.name === r.recipe_name && f.author === r.author)) {
+            r.favorite = true;
+        }
+    });
     addCards(data);
     
 }
