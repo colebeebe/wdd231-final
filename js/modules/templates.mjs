@@ -18,7 +18,7 @@ export function recipeCardTemplate(data, id) {
     // before the question mark. If true, return the first thing, and if
     // false return the second.' In other words, it's the same thing as
     // what we did for the image but in one line
-    const alt = data.image_alt ? data.image_alt : 'recipe photo';
+    const alt = data.image_alt ? data.image_alt : `${data.recipe_name} recipe photo`;
 
     return `
         <div class="preview">
@@ -86,11 +86,11 @@ export function recipePageTemplate(data) {
         <hr />
         <img src="${image}" alt="${alt}" />
         <section class="prep-info">
-            ${data.servings ? `<p class="servings">Servings: ${data.servings}</p>`: ``}
-            ${data.yields ? `<p class="yields">Yields: ${data.yields}</p>`: ``}
-            ${data.prep_time ? `<p class="prep-time">Prep time: ${data.prep_time}</p>`: ``}
-            ${data.cook_time ? `<p class="cook-time">Cook time: ${data.cook_time}</p>`: ``}
-            ${data.total_time ? `<p class="total-time">Total time: ${data.total_time}</p>`: ``}
+            ${data.servings ? `<section class="prep servings"><p class="prep-title">Servings</p><p>${data.servings}<p></section>`: ``}
+            ${data.yields ? `<section class="prep yields"><p class="prep-title">Yields</p><p>${data.yields}</p></section>`: ``}
+            ${data.prep_time ? `<section class="prep prep-time"><p class="prep-title">Prep time</p><p>${data.prep_time}</p></section>`: ``}
+            ${data.cook_time ? `<section class="prep cook-time"><p class="prep-title">Cook time</p><p>${data.cook_time}</p></section>`: ``}
+            ${data.total_time ? `<section class="prep total-time"><p class="prep-title">Total time</p><p>${data.total_time}</p></section>`: ``}
         </section>
         <hr />
         <section class="ingredients">
