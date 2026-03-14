@@ -108,6 +108,26 @@ body {
   cursor: pointer;
 }
 
+.modal-content.close-animation {
+  animation: slideUpFade 0.3s ease forwards;
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.modal.close-animation {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .modal-content h2 {
   margin: 0;
   font-size: 1.8rem;

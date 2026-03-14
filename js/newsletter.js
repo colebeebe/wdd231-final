@@ -1,4 +1,5 @@
-const modal = document.querySelector("#newsletter-modal");
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
 const openBtn = document.querySelector("#open-newsletter");
 const closeBtn = document.querySelector(".close-button");
 const form = document.querySelector("#newsletter-form");
@@ -7,20 +8,29 @@ const errorMessage = document.querySelector("#form-error");
 
 function openModal() {
   modal.classList.add("open");
+  modalContent.classList.add("open");
   modal.classList.remove("close-animation"); 
+  modalContent.classList.remove("close-animation"); 
   modal.setAttribute("aria-hidden", "false");
+  modalContent.setAttribute("aria-hidden", "false");
 }
 
 
 function closeModal() {
   modal.classList.add("close-animation");
+  modalContent.classList.add("close-animation");
   modal.addEventListener("animationend", handleClose, { once: true });
+  modalContent.addEventListener("animationend", handleClose, { once: true });
 }
 
 
 function handleClose() {
-  modal.classList.remove("open", "close-animation");
+  modal.classList.remove("open");
+  modalContent.classList.remove("open");
   modal.setAttribute("aria-hidden", "true");
+  modalContent.setAttribute("aria-hidden", "true");
+  modal.classList.remove("close-animation");
+  modalContent.classList.remove("close-animation");
 }
 
 
