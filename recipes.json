@@ -235,5 +235,297 @@
                 ]
             }
         ]
+    },
+    {
+        "recipe_name": "Chicken Caesar Salad",
+        "author": "Bon Appetit",
+        "image": "chicken-caesar-salad.jpg",
+        "image_alt": "grilled chicken caesar salad",
+        "yields": "4 servings",
+        "prep_time": "20 min",
+        "total_time": "30 min",
+        "subrecipes": [
+            {
+                "ingredients": [
+                    { 
+                        "name": "romaine lettuce", 
+                        "amount": "2", 
+                        "unit": "heads", 
+                        "notes": "chopped" 
+                    },
+                    { 
+                        "name": "grilled chicken breast", 
+                        "amount": "2", 
+                        "notes": "sliced" 
+                    },
+                    { 
+                        "name": "croutons", 
+                        "amount": "1", 
+                        "unit": "cup" 
+                    },
+                    { 
+                        "name": "parmesan cheese", 
+                        "amount": "1/2", 
+                        "unit": "cup", 
+                        "notes": "shredded" 
+                    },
+                    { 
+                        "name": "caesar dressing", 
+                        "amount": "1/2", 
+                        "unit": "cup" 
+                    },
+                    { 
+                        "name": "lemon juice", 
+                        "amount": "1", 
+                        "unit": "Tbsp." 
+                    },
+                    { 
+                        "name": "black pepper", 
+                        "amount": "1/4", 
+                        "unit": "tsp." 
+                    }
+                ],
+                "steps": [
+                    "Place chopped romaine lettuce in a large salad bowl.",
+                    "Add sliced grilled chicken and croutons.",
+                    "Drizzle with caesar dressing and lemon juice.",
+                    "Toss everything together until evenly coated.",
+                    "Top with shredded parmesan cheese and black pepper before serving."
+                ]
+            }
+        ]
+    },
+    {
+        "recipe_name": "Banana Bread",
+        "author": "Sally's Baking Recipes",
+        "image": "banana-bread.jpg",
+        "image_alt": "slice of homemade banana bread",
+        "yields": "1 loaf",
+        "prep_time": "15 min",
+        "total_time": "1 hr 10 min",
+        "subrecipes": [
+            {
+                "ingredients": [
+                    { 
+                        "name": "ripe bananas", 
+                        "amount": "3", 
+                        "notes": "mashed" 
+                    },
+                    { 
+                        "name": "granulated sugar", 
+                        "amount": "3/4", 
+                        "unit": "cup" 
+                    },
+                    { 
+                        "name": "butter", 
+                        "amount": "1/3", 
+                        "unit": "cup", 
+                        "notes": "melted" 
+                    },
+                    { 
+                        "name": "large egg", 
+                        "amount": "1" 
+                    },
+                    { 
+                        "name": "vanilla extract", 
+                        "amount": "1", 
+                        "unit": "tsp." 
+                    },
+                    { 
+                        "name": "baking soda", 
+                        "amount": "1", 
+                        "unit": "tsp." 
+                    },
+                    { 
+                        "name": "salt", 
+                        "amount": "1/2", 
+                        "unit": "tsp." 
+                    },
+                    { 
+                        "name": "all-purpose flour", 
+                        "amount": "1 1/2", 
+                        "unit": "cups" 
+                    },
+                    { 
+                        "name": "chopped walnuts", 
+                        "amount": "1/2", 
+                        "unit": "cup", 
+                        "notes": "optional" 
+                    }
+                ],
+                "steps": [
+                    "Preheat the oven to 350°F and grease a loaf pan.",
+                    "In a large bowl mix mashed bananas, sugar, and melted butter.",
+                    "Stir in the egg and vanilla extract.",
+                    "Add baking soda and salt and mix well.",
+                    "Stir in the flour until just combined, then fold in walnuts if using.",
+                    "Pour batter into the prepared loaf pan.",
+                    "Bake for 50 to 55 minutes or until a toothpick inserted in the center comes out clean."
+                ]
+            }
+        ]
+    },
+    {
+        "recipe_name": "Beef Pho",
+        "author": "Vietnamese Home Cooking",
+        "image": "beef-pho.png",
+        "image_alt": "bowl of traditional vietnamese beef pho",
+        "yields": "4 servings",
+        "prep_time": "20 min",
+        "total_time": "2 hr 30 min",
+        "subrecipes": [
+            {
+                "ingredients": [
+                    {
+                        "name": "beef bones",
+                        "amount": "2",
+                        "unit": "lb."
+                    },
+                    {
+                        "name": "beef broth",
+                        "amount": "8",
+                        "unit": "cups"
+                    },
+                    {
+                        "name": "rice noodles",
+                        "amount": "8",
+                        "unit": "oz."
+                    },
+                    {
+                        "name": "thinly sliced beef sirloin",
+                        "amount": "8",
+                        "unit": "oz."
+                    },
+                    {
+                        "name": "onion",
+                        "amount": "1",
+                        "notes": "halved"
+                    },
+                    {
+                        "name": "fresh ginger",
+                        "amount": "3",
+                        "unit": "in.",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "star anise",
+                        "amount": "2"
+                    },
+                    {
+                        "name": "fish sauce",
+                        "amount": "2",
+                        "unit": "Tbsp."
+                    },
+                    {
+                        "name": "bean sprouts",
+                        "amount": "1",
+                        "unit": "cup"
+                    },
+                    {
+                        "name": "green onions",
+                        "amount": "2",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "fresh cilantro",
+                        "amount": "1/4",
+                        "unit": "cup",
+                        "notes": "chopped"
+                    },
+                    {
+                        "name": "lime",
+                        "amount": "1",
+                        "notes": "cut into wedges"
+                    }
+                ],
+                "steps": [
+                    "In a large pot add the beef bones and beef broth and bring to a boil. Reduce heat and simmer.",
+                    "Add the onion, ginger, star anise, and fish sauce to the broth and simmer for about 2 hours to develop flavor.",
+                    "Cook the rice noodles according to the package instructions and divide them into serving bowls.",
+                    "Place thinly sliced beef over the noodles in each bowl.",
+                    "Ladle the hot broth over the noodles and beef so the meat cooks in the broth.",
+                    "Top with bean sprouts, green onions, and cilantro.",
+                    "Serve with lime wedges on the side."
+                ]
+            }
+        ]
+    },
+    {
+        "recipe_name": "Bacon Fried Rice",
+        "author": "Home Kitchen",
+        "image": "bacon-fried-rice.jpg",
+        "image_alt": "bowl of bacon fried rice with eggs and green onions",
+        "yields": "4 servings",
+        "prep_time": "10 min",
+        "total_time": "25 min",
+        "subrecipes": [
+            {
+                "ingredients": [
+                    {
+                        "name": "cooked white rice",
+                        "amount": "3",
+                        "unit": "cups",
+                        "notes": "preferably day-old"
+                    },
+                    {
+                        "name": "bacon",
+                        "amount": "6",
+                        "unit": "slices",
+                        "notes": "chopped"
+                    },
+                    {
+                        "name": "large eggs",
+                        "amount": "2"
+                    },
+                    {
+                        "name": "garlic cloves",
+                        "amount": "2",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "soy sauce",
+                        "amount": "3",
+                        "unit": "Tbsp."
+                    },
+                    {
+                        "name": "frozen peas",
+                        "amount": "1/2",
+                        "unit": "cup"
+                    },
+                    {
+                        "name": "carrots",
+                        "amount": "1/2",
+                        "unit": "cup",
+                        "notes": "diced"
+                    },
+                    {
+                        "name": "green onions",
+                        "amount": "3",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "sesame oil",
+                        "amount": "1",
+                        "unit": "tsp."
+                    },
+                    {
+                        "name": "black pepper",
+                        "amount": "1/4",
+                        "unit": "tsp."
+                    }
+                ],
+                "steps": [
+                    "Cook the chopped bacon in a large skillet or wok over medium heat until crispy.",
+                    "Remove the bacon and set aside, leaving about 1 tablespoon of bacon fat in the pan.",
+                    "Add garlic and diced carrots to the pan and cook for about 2 minutes.",
+                    "Push the vegetables to one side of the pan and scramble the eggs on the other side.",
+                    "Add the cooked rice and break up any clumps while stirring.",
+                    "Stir in the peas, soy sauce, sesame oil, and black pepper.",
+                    "Add the cooked bacon back to the pan and mix everything together.",
+                    "Cook for another 2 to 3 minutes and top with sliced green onions before serving."
+                ]
+            }
+        ]
     }
+
 ]
