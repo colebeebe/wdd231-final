@@ -12,6 +12,7 @@
         <title>Any Recipe Goes | Home</title>
         <link rel="stylesheet" href="css/index.css" />
         <script src="js/newsletter.js" defer></script>
+        <script type="module" src="js/featured.js" defer></script>
     </head>
     <body>
         <header>
@@ -36,15 +37,8 @@
                     broaden your pallet.</p>
             </section>
             <section class="featured">
-            <div class="image-container">  
-                <div class="image-card">
-                <img src="https://picsum.photos/800/400" alt="Recipe 1">
-                </div>
-
-                <div class="image-card">
-                <img src="https://picsum.photos/800/400" alt="Recipe 2">
-                </div>
-            </div>
+                <h2>Featured Recipes</h2>
+                <div class="content" id="featured-recipes"></div>
             </section>
             <button id="open-newsletter" class="btn btn-green">Join Our Newsletter</button>
         </main>
