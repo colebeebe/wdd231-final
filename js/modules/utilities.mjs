@@ -78,3 +78,12 @@ function updateFavorites(favorites) {
     if (!favorites) return;
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
+
+export function addMenuFunctionality() {
+    const toggleButton = document.querySelector('.expand-menu');
+    toggleButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('menu-close');
+    });
+}

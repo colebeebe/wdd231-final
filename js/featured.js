@@ -1,4 +1,4 @@
-import { getJson, addCards } from "./modules/utilities.mjs";
+import { getJson, addCards, addMenuFunctionality } from "./modules/utilities.mjs";
 
 async function init() {
     const data = await getJson('./recipes.json');
@@ -20,6 +20,9 @@ async function init() {
         const recipe = randomRecipes[index];
         link.href = `recipe.html?name=${encodeURIComponent(recipe.recipe_name)}`;
     });
+
+    addMenuFunctionality();
 }
 
 init();
+

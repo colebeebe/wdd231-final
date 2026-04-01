@@ -1,6 +1,6 @@
 // browse.js
 
-import { getJson, addCards } from "./modules/utilities.mjs";
+import { getJson, addCards, addMenuFunctionality } from "./modules/utilities.mjs";
 // Remember that we import we have to specify module in the <script> element
 
 let favorites = JSON.parse(localStorage.getItem('favorites'));
@@ -31,6 +31,7 @@ async function init() {
         }
     });
     addCards(data);
+    addMenuFunctionality();
 }
 
 // This is the actual call to our initialization function. Without this, it
