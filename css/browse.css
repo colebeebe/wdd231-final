@@ -11,14 +11,59 @@
     margin: 20px;
 }
 
+.top-bar > h1 {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.top-bar form {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.top-bar input {
+    flex: 1;
+    font-size: 1.1rem;
+    border-radius: 9999px 0 0 9999px;;
+    border: 1px solid gray;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.top-bar button {
+    border-radius: 0 9999px 9999px 0;
+    border: none;
+    font-size: 1rem;
+    padding: 5px 15px;
+}
+
+
 /* Medium (tablet) screens */
 @media screen and (max-width: 1000px) {
-
+    .top-bar form {
+        width: 80%;
+    }
+    .top-bar input,
+    .top-bar button {
+        font-size: 0.8rem;
+    }
 }
 
 /* Small (phone) screens */
 @media screen and (max-width: 700px) {
     h2 {
         font-size: 1.1rem;
+    }
+    .top-bar h1 {
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+    .top-bar form {
+        width: 90%;
+    }
+    .top-bar input,
+    .top-bar button {
+        font-size: 0.65rem;
     }
 }

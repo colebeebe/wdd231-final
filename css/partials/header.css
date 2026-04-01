@@ -28,6 +28,18 @@ nav {
     justify-content: flex-start;
     gap: 20px;
     margin: 20px 0;
+    transform: all 0.5s ease;
+}
+
+.expand-menu {
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    border: none;
 }
 
 /* Medium (tablet) screens */
@@ -55,5 +67,14 @@ nav {
     nav > a {
         width: 50%;
         margin: 0 auto;
+    }
+
+    .expand-menu {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .menu-close {
+        display: none;
     }
 }

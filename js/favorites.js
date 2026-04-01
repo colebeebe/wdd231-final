@@ -1,6 +1,6 @@
 // favorites.js
 
-import { getJson, addCards } from './modules/utilities.mjs';
+import { getJson, addCards, addMenuFunctionality } from './modules/utilities.mjs';
 // Remember that if we use modules, we have to set type to module in the
 // <script element in the HTML
 
@@ -19,6 +19,7 @@ async function init() {
     });
     const favs = data.filter(r => r.favorite);
     addCards(favs);
+    addMenuFunctionality();
 }
 
 init();
