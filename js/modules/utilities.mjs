@@ -46,10 +46,8 @@ export function addCards(data) {
     // `join('')`, which just tells map() to join all elements with nothing
     // (the default is commas).
     const html = data.map(recipeCardTemplate).join('');
-    // After we've created our html, we can simply append it to the page. In
-    // this case we use insertAdjacentHTML(), which is non-destructive (it
-    // doesn't destroy everything that already exists inside the element)
-    content.insertAdjacentHTML('beforeend', html);
+
+    content.innerHTML = html;
 
     content.addEventListener('click', function(e) {
         if (e.target.classList.contains('favorite')) {
