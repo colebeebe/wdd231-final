@@ -6,18 +6,14 @@
 @import './partials/header.css';
 @import './partials/recipeCard.css';
 
-/*=========================
-  General body
-=========================*/
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif;
 }
 
-/*=========================
-  Hero section
-=========================*/
+
 .hero {
     width: 100%;
     margin: 0 0 40px 0; 
@@ -30,17 +26,16 @@ body {
     display: block;
 }
 
-/*=========================
-  Intro section
-=========================*/
+main {
+    padding: 0 30px;
+}
+
 .intro {
-    padding: 30px;
+
     margin-bottom: 50px; 
 }
 
-/*=========================
-  Featured Recipes
-=========================*/
+
 #featured-recipes {
     display: flex;
     flex-wrap: wrap;
@@ -49,24 +44,14 @@ body {
     margin: 20px;
 }
 
-/* Individual recipe cards will use styling from recipeCard.css */
 
-/*=========================
-  Newsletter button
-=========================*/
 #open-newsletter {
-    margin-left: 20px; 
-    margin-top: 20px; 
-    z-index: 10; 
-    position: relative; 
-    align-self: flex-end;
-    margin-right: 10px;
-    bottom: 40px;     
+    margin: 20px 0;
+    position: relative;
+    z-index: 10;
+    align-self: flex-start;
 }
 
-/*=========================
-  Modal styles
-=========================*/
 .modal {
     display: none;
     position: fixed;
@@ -80,6 +65,26 @@ body {
 
 .modal.open {
     display: flex;
+}
+
+/* Fade out the backdrop */
+.modal.close-animation {
+  animation: fadeOut 0.3s forwards;
+}
+
+/* Scale + fade out the modal box */
+.modal-content.close-animation {
+  animation: scaleOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes scaleOut {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.9); opacity: 0; }
 }
 
 .modal-content {
@@ -148,16 +153,12 @@ body {
     background-color: var(--red);
 }
 
-/*=========================
-  Section spacing
-=========================*/
+
 section {
     margin: 80px 0;
 }
 
-/*=========================
-  Responsive Styles
-=========================*/
+
 @media screen and (max-width: 1000px) {
     /* optional tablet adjustments */
 }
