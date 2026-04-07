@@ -11,6 +11,15 @@ async function init() {
 
     // First, render using addCards() so layout is correct
     addCards(randomRecipes);
+    // Add author to card
+    const container = document.getElementById("featured-recipes");
+    const cards = container.querySelectorAll(".preview");
+
+    cards.forEach((card, index) => {
+        const recipe = randomRecipes[index];
+        const title = card.querySelector('.info');
+        title.insertAdjacentHTML('afterend', `<p class="author">Author: ${recipe.author}</p>`)
+    });
     addMenuFunctionality();
 }
 
