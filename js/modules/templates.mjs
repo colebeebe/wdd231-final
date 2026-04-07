@@ -29,7 +29,7 @@ export function recipeCardTemplate(data, id) {
             </section>
             <div class="btn-container">
                 <button class="btn btn-orange favorite" data-id="${id}">${data.favorite ? `Unfavorite`: `Favorite`}</button>
-                <a href="recipe.html?id=${id}" class="btn btn-green view">View</a>
+                <a href="recipe.html?name=${data.recipe_name}" class="btn btn-green view">View</a>
             </div>
         </div>
     `;

@@ -11,16 +11,6 @@ async function init() {
 
     // First, render using addCards() so layout is correct
     addCards(randomRecipes);
-
-    // Then fix the links to point correctly
-    const container = document.getElementById("featured-recipes");
-    const links = container.querySelectorAll("a");
-
-    links.forEach((link, index) => {
-        const recipe = randomRecipes[index];
-        link.href = `recipe.html?name=${encodeURIComponent(recipe.recipe_name)}`;
-    });
-
     addMenuFunctionality();
 }
 
