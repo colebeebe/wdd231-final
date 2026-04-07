@@ -43,7 +43,17 @@ main {
     gap: 20px; /* same as browse.html */
     margin: 20px;
 }
-
+.preview {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.info {
+    margin: 10px;
+}
+.author {
+    text-align: right;
+    color: var(--dark-red);
+    font-size: 0.8rem;
+}
 
 #open-newsletter {
     margin: 20px 0;
