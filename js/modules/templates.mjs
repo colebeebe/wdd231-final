@@ -5,7 +5,7 @@
 // the json file. 'id' is the id of the reicpe, which is the same as its index
 // in the array. We return a single card element that can, in turn, be
 // inserted into the html
-export function recipeCardTemplate(data, id) {
+export function recipeCardTemplate(data) {
     // Get the recipe's image. It must be found inside images/recipes/
     // We also check to make sure that the data exists.
     let image = 'https://picsum.photos/100/100';
@@ -28,8 +28,8 @@ export function recipeCardTemplate(data, id) {
                 <p class="favorite-marker ${data.favorite ? `` : `hidden`}">❤︎</p>
             </section>
             <div class="btn-container">
-                <button class="btn btn-orange favorite" data-id="${id}">${data.favorite ? `Unfavorite`: `Favorite`}</button>
-                <a href="recipe.html?id=${id}" class="btn btn-green view">View</a>
+                <button class="btn btn-orange favorite" data-id="${data.recipe_name}">${data.favorite ? `Unfavorite`: `Favorite`}</button>
+                <a href="recipe.html?name=${data.recipe_name}" class="btn btn-green view">View</a>
             </div>
         </div>
     `;

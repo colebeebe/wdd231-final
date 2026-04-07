@@ -52,7 +52,7 @@ export function addCards(data) {
     content.addEventListener('click', function(e) {
         if (e.target.classList.contains('favorite')) {
             const id = e.target.dataset.id;
-            const item = data[id]; // the specific recipe object
+            const item = data.filter(r => r.recipe_name === id)[0]; // the specific recipe object
 
             if (item.favorite) {
                 e.target.textContent = 'Favorite';
@@ -66,7 +66,6 @@ export function addCards(data) {
             }
 
             const marker = e.target.closest('.preview').querySelector('.favorite-marker');
-            console.log(e.target.closest('.preview'));
             if (marker) marker.classList.toggle('hidden');
 
             updateFavorites(favorites);
